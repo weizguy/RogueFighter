@@ -1,0 +1,61 @@
+html, body{
+    overflow: hidden;
+}
+
+#main_content{
+    padding-top: 30%;
+}
+
+#titlecontent p {
+    font-family: 'Archivo Black', sans-serif;
+    color: #f8bb00;
+    line-height: 1.5em;
+}
+
+#titlecontent ul li{
+    font-family: 'Archivo Black', sans-serif;
+    color: #f8bb00;
+    list-style-type: none;
+}
+
+#titlecontent p.heading{
+    text-align: center;
+}
+
+#titles {
+    position: absolute;
+    width: 18em;
+    height: 80%;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 102%;
+    transform: perspective(300px) rotateX(34deg);
+}
+
+#titles:after {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+#titlecontent
+{
+    position: absolute;
+    top: 100%;
+    animation: scroll 60s linear 4s;
+}
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -300%; }
+}

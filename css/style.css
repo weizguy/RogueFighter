@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+.hidden{
+visibility: none;
+}
+
+#background_slice{
+    width: 100%;
+    background: url("../imgs/rogue-fighter-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.originalHeight{
+    min-height: 25vh;
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+}
+
+.minHeight{
+    height: 10vh;
+}
+
+#brand img{
+    width: 30vw;
+    margin-top: 1%;
+}
+
+#navigation {
+    width: 100%;
+    background-color: #0a0a0a;
+}
+
+#navigation ul{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+/* menu appearance */
+#navigation ul li{
+     display: inline-block;
+     list-style-type: none;
+     vertical-align: middle;
+     font-size: 1vw;
+     line-height: 1vw;
+     border-right: solid 1px #4D4D4D;
+     padding: .75% 4% .75% 4%;
+     color: #4D4D4D;
+ }
+
+#navigation ul .menuItem:hover{
+    background-color: #3c3c3c;
+    color: #1A1A1A;
+}
+
+#navigation ul .menuItem a{
+    text-decoration: none;
+}
+
+#navigation ul li a{
+    color: #ffffff;
+}
+
+#navigation ul li a i{
+    padding: 0 0;
+}
+
+#navigation ul li a i.fa-rebel{
+    color: #FF3A08;
+}
+
+#navigation ul li a i.fa-cogs{
+    color: #FF8105;
+}
+
+#navigation ul li a i.fa-users{
+    color: #18CC92;
+}
+
+#navigation ul li a i.fa-newspaper-o{
+    color: #45FFF8;
+}
+
+#navigation ul li a i.fa-shopping-cart{
+    color: #e7cb46; /*yellow*/
+}
+
+#navigation ul li a i.fa-heart{
+    color: #ff8a8a; /*pink*/
+}
+
+#navigation ul li a p{
+    margin: 0;
+    padding: 0;
+}
+
+/* login section of the menu */
+.login{
+    position: relative;
+}
+
+.hideClass{
+    display: none;
+}
+
+.signOut{
+    cursor: pointer;
+}
+
+/* tool tip that appears above the login */
+.toolTip{
+    position: absolute;
+    top: -5vh;
+    visibility: hidden;
+    width: 20vh;
+    height: 4vh;
+    padding: 1vh;
+    background-color: #0059ee;
+    font-size: 2vh;
+    line-height: 2vh;
+    color: #ffffff;
+    z-index: 5;
+    border-radius: 2px;
+}
+
+.login:hover .toolTip{
+    visibility: visible;
+}
+
+/* this is the triangle for the tooltip */
+.toolTip:before{
+    position:absolute;
+    content:'';
+    width:0;
+    height:0;
+    border-left: 15px solid transparent;
+    border-right:15px solid transparent;
+    border-top: 15px solid #0059ee;
+    bottom: -10px;
+}
+
+/* this is the R2D2 for the tooltip */
+.toolTip:after {
+    position:absolute;
+    content:'';
+    background: url("../imgs/r2d2-tooltip.png");
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 80vh;
+    top: -45px;
+    left: 2vw;
+    z-index: 0;
+}
+
+/* specific styles for player button */
+
+#navigation .playerItem, #navigation .login{
+    border-right: none;
+    padding: .75% 1% .75% 1%;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+}
+
+.toolTip:after {
+    content:'';
+    background: url("../imgs/r2d2-tooltip.png");
+    width: 100px;
+    height: 49px;
+    position:absolute;
+    top: -49px;
+    left:40%;
+
+}
+
+#navigation .playerItem a {
+    text-decoration: none;
+}
+
+/* END NAVIGATION STYLES */
+
+.main_content{
+    width: 100%;
+    min-height: 67vh;
+    background: url("../imgs/stars.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.standard_padding{
+    padding-top: 10%;
+}
+
+.increased_padding{
+    padding-top: 30%;
+}
+
+.play {
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    font-size: 5em;
+    text-align: center;
+    text-decoration: none;
+    color: #eecd0a;
+    animation: play 2s linear infinite;
+}
+
+@keyframes play {
+    50% { opacity: 0; }
+}
+
+.volume{
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    color: #ffffff;
+}
+
+.volume{
+    background: url("../imgs/volume-droid.png") 0 0;
+    width: 150px;
+    height: 198px;
+}
+
+.volumeOff{
+    background: url("../imgs/volume-droid.png") 0 198px;
+    width: 150px;
+    height: 198px;
+}
+
